@@ -1,41 +1,71 @@
 package latihan_pbo.latihan1;
 
+//import java.util.Scanner;
 
 class Cafe{
-    String Nama;
-    String Alamat;
+    String nama;
+    String alamat;
 
-    Cafe(String Nama, String Alamat){
-        this.Nama = Nama;
-        this.Alamat = Alamat;
-        System.out.println("nama cafenya adalah " + this.Nama);
-        System.out.println("alamatnya ada di daerah: " + this.Alamat);
-    }
-    void buka1(){
-        System.out.println(this.Nama + " cafe buka jam 10 pagi");
-    }
-    void buka2(){
-        System.out.println(this.Nama + " cafe buka jam 7 pagi");
-    }
+    Cafe(String nama, String alamat){
+    this.nama = nama;
+    this.alamat = alamat;
+    System.out.println(nama);
+    System.out.println(alamat);
+} 
+
+//method
+void buka(){
+    System.out.println("Cafe " +  nama + " Sudah Buka ");
 }
 
-//kelas main adalah untuk menampilkan program yang akan kita buat
+public String getNama() {
+    return nama;
+}
+
+public void setNama(String nama) {
+    this.nama = nama;
+    
+}
+
+public String getAlamat() {
+    return alamat;
+}
+
+public void setAlamat(String alamat) {
+    this.alamat = alamat;
+}
+// contrusctor
+}
 public class Main {
     public static void main(String[] args) {
-        Cafe cafe1 = new Cafe("Kopi Kenangan", "Indramayu");
-        cafe1.buka1();
-        Cafe cafe2 = new Cafe("Tomoro Coffee", "Indramayu");
-        cafe2.buka2();
-        // cafe1.Nama = "Kopi Kenangan";
-        // cafe1.Alamat = "Indramayu";
-        // cafe2.Nama = "kopte";
-        // cafe2.Alamat = "IMKOT";
+        
+        //Scanner input = new Scanner(System.in);
+        // //Cafe cafe = new Cafe();
+        
+        //System.out.printIn("Masukan nama cafe: ");
+        // //cafe.nama = input.nextLine();
+         
+        //System.out.printIn("nama yang di input adalah : " + cafe.nama);
+        //cafe.buka();
+        
+        Cafe cafe2 = new Cafe("Janji Jiwa",  "Indramayu");
+        cafe2.setNama("kenangan");
+        cafe2.buka();
 
-        // System.out.println("============cafe1===============");
-        // System.out.println("nama cafenya adalah" + cafe1.Nama);
-        // System.out.println("alamatnya ada di kabupaten: " + cafe1.Alamat);
-        // System.out.println("============cafe2===============");
-        // System.out.println("nama cafenya adalah " + cafe2.Nama);
-        // System.out.println("alamatnya ada di daerah: " + cafe2.Alamat);
-    }
+ }   
 }
+
+  //Cafe cafe1 = new Cafe("Kopi Kenangan", "Indramayu");
+  //Cafe cafe2 = new Cafe("Janji Jiwa", "Jatibarang");  
+  //Cafe cafe3 = new Cafe("kopte", "imkot");  
+
+  //cafe1.buka();
+
+  // System.out.println("Nama Cafenya adalah : " + cafe1.nama);
+  // System.out.println("Alamatnya ada di : " + cafe1.alamat);
+
+  // System.out.println("Nama Cafenya adalah : " + cafe2.nama);
+  // System.out.println("Alamatnya ada di : " + cafe2.alamat);
+
+  // System.out.println("Nama Cafenya adalah : " + cafe3.nama);
+  // System.out.println("Alamatnya ada di : " + cafe3.alamat);
