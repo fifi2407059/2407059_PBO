@@ -1,0 +1,21 @@
+package latihan_pbo.latihan4;
+
+public class Persegi extends BangunDatar {
+
+    double sisi;
+
+    public Persegi(double sisi) {
+        super("Persegi");
+        this.sisi = sisi;
+    }
+
+    @Override
+    public double hitungLuas() {
+        return sisi * sisi;
+    }
+
+    @Override
+    public double hitungKeliling() {
+        return 4 * sisi;
+    }
+}
